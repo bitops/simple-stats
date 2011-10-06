@@ -2,6 +2,7 @@ require 'statsample'
 
 file = ARGV[0]
 raw = File.read(file).split
+# if you had a header in the file
 #raw.shift
 raw.map!(&:to_i)
 v = raw.to_scale
