@@ -1,4 +1,4 @@
-A little script I wrote to generate some simple statistics based on a list of numbers.
+A little script I wrote to generate some simple statistics based on a list of integers.
 
 ## License
 
