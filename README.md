@@ -8,13 +8,13 @@ I put this script up because I hope it can help some folks get some numbers that
 
 ## Explanation of the different statistics
 
-**N** = total number of observations. The more the better, better sample size provides more reliable results.
+**N** = total number of observations. The more the better, as larger sample size provides more reliable results. This comes from the Central Limit Theorem.
 
 **Min** = smallest observation in the total set of observations.
 
 **Max** = largest observations in the total set of observations.
 
-**Mean** = the average.
+**Mean** = average.
 
 **Median** = the "middle" observation. If this is very different from the mean, it indicates that outliers are skewing the data set.
 
@@ -28,16 +28,16 @@ Or, said differently: high kurtosis means that more of the noise in the data is 
 
 **Notes on skew and kurtosis:**
 
-It's important to understand that skew and kurtosis are there to help you understand and interpret your data, they do not provide answers by themselves. There is no substitute for good data and a better understanding of that data! 
+It's important to understand that skew and kurtosis are there to help you understand and interpret your data, they do not provide answers by themselves. *There is no substitute for good data and an even better understanding of that data!*
 
 If skew is negative, that just means that there's more data on the right side of the mean than the left. That's all it means though! It's up to the person running the program to understand whether or not this is desirable, and what story the data is telling you.
 
-Similarly, a high kurtosis is not "bad" or "good", it just depends on what you are trying to understand. It might be a good thing if kurtosis is high, because you are observing a scenario where, every once in a while, there's an extreme outlier, but you're okay adjusting for that.
+Similarly, a high kurtosis is not *"bad"* or *"good"*, it just depends on what you are trying to understand. It might be a good thing if kurtosis is high, because you are observing a scenario where, every once in a while, there's an extreme outlier, but you're okay adjusting for that.
 
 
 ## License
 
-THE BEER-WARE LICENSE
+**THE BEER-WARE LICENSE**
 
 Sebastian Wittenkamp wrote this file. As long as you retain this notice you
 can do whatever you want with this stuff. If we meet some day, and you think
