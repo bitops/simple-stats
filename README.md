@@ -1,14 +1,14 @@
 A little script I wrote to generate some simple statistics based on a list of integers.
 
-## Disclaimer
+## Disclaimer!
 
-I am not a trained statistician so the explanation of the statistics in the script may not be accurate. If you see something that looks incorrect or could be explained better, please please please fork the script, fix it and send me a pull request.
+I am not a trained statistician, though I have done coursework both in statistics and SAS. That said, the explanation of the statistics in the script may not be completely accurate. If you see something that looks incorrect or could be explained better, please please please fork the script, fix it and send me a pull request.
 
 I put this script up because I hope it can help some folks get some numbers that are easy to understand and begin to gain an interest in statistics and analyis.
 
 ## Explanation of the different statistics
 
-**N** = total number of observations. The more the better, as larger sample size provides more reliable results. This comes from the Central Limit Theorem.
+**N** = total number of observations. (An observation is the same as a data point). The more the better, as larger sample size provides more reliable results. This comes from the Central Limit Theorem.
 
 **Min** = smallest observation in the total set of observations.
 
