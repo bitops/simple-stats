@@ -22,7 +22,7 @@ I put this script up because I hope it can help some folks get some numbers that
 
 **Skew** = describes the overall shape of the data on either side of the mean. A value of zero implies symmetrical distribution. A negative value indicates that the data tends to be distributed more heavily on the right side of the mean (possibly including the median). A positive value indicates that the data tends to be distributed more heavily on the left side of the mean (possibly including the median).
 
-**Kurtosis** = a little tricky to understand. From Wikipedia: "Higher kurtosis means more of the variance is the result of infrequent extreme deviations, as opposed to frequent modestly sized deviations". 
+**Kurtosis** = a little tricky to understand. From Wikipedia: *"Higher kurtosis means more of the variance is the result of infrequent extreme deviations, as opposed to frequent modestly sized deviations".*
 
 Or, said differently: high kurtosis means that more of the noise in the data is coming from extreme outliers which do not happen very often. Whereas lower kurtosis implies that, while there is noise in the data, it is happening more frequently. (And so might not even be noise but a story unto itself).
 
