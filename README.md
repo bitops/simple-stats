@@ -8,25 +8,25 @@ I put this script up because I hope it can help some folks get some numbers that
 
 ## Explanation of the different statistics
 
-*N* = total number of observations. The more the better, better sample size provides more reliable results.
+**N** = total number of observations. The more the better, better sample size provides more reliable results.
 
-*Min* = smallest observation in the total set of observations.
+**Min** = smallest observation in the total set of observations.
 
-*Max* = largest observations in the total set of observations.
+**Max** = largest observations in the total set of observations.
 
-*Mean* = the average.
+**Mean** = the average.
 
-*Median* = the "middle" observation. If this is very different from the mean, it indicates that outliers are skewing the data set.
+**Median** = the "middle" observation. If this is very different from the mean, it indicates that outliers are skewing the data set.
 
-*Std. Dev* = Standard Deviation. One standard deviation on either side of the mean encompasses 68% of the data set. Two deviations encompasses 95%. Three deviations captures 99% of the data set. 
+**Std. Dev** = Standard Deviation. One standard deviation on either side of the mean encompasses 68% of the data set. Two deviations encompasses 95%. Three deviations captures 99% of the data set. 
 
-*Skew* = describes the overall shape of the data on either side of the mean. A value of zero implies symmetrical distribution. A negative value indicates that the data tends to be distributed more heavily on the right side of the mean (possibly including the median). A positive value indicates that the data tends to be distributed more heavily on the left side of the mean (possibly including the median).
+**Skew** = describes the overall shape of the data on either side of the mean. A value of zero implies symmetrical distribution. A negative value indicates that the data tends to be distributed more heavily on the right side of the mean (possibly including the median). A positive value indicates that the data tends to be distributed more heavily on the left side of the mean (possibly including the median).
 
-*Kurtosis* = a little tricky to understand. From Wikipedia: "Higher kurtosis means more of the variance is the result of infrequent extreme deviations, as opposed to frequent modestly sized deviations". 
+**Kurtosis** = a little tricky to understand. From Wikipedia: "Higher kurtosis means more of the variance is the result of infrequent extreme deviations, as opposed to frequent modestly sized deviations". 
 
 Or, said differently: high kurtosis means that more of the noise in the data is coming from extreme outliers which do not happen very often. Whereas lower kurtosis implies that, while there is noise in the data, it is happening more frequently. (And so might not even be noise but a story unto itself).
 
-*Notes on skew and kurtosis:*
+**Notes on skew and kurtosis:**
 
 It's important to understand that skew and kurtosis are there to help you understand and interpret your data, they do not provide answers by themselves. There is no substitute for good data and a better understanding of that data! 
 
