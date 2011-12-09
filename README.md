@@ -1,10 +1,10 @@
 A little script I wrote to generate some simple statistics based on a list of integers.
 
-## Disclaimer!
+## Disclaimer!!!
 
-I am not a trained statistician, though I have done coursework both in statistics and SAS. That said, the explanation of the statistics in the script may not be completely accurate. If you see something that looks incorrect or could be explained better, please please please fork the script, fix it and send me a pull request.
+I am not a trained statistician, though I have done coursework in both statistics and SAS. That said, the explanation of the statistics in the script may not be completely accurate. If you see something that looks incorrect, or could be explained better, please please please fork the script, fix it and send me a pull request.
 
-I put this script up because I hope it can help some folks get some numbers that are easy to understand and begin to gain an interest in statistics and analyis.
+I put this script up because I hope it can help people get some numbers that are easy to understand and begin to gain an interest in statistics and analysis.
 
 ## Explanation of the different statistics
 
@@ -16,9 +16,11 @@ I put this script up because I hope it can help some folks get some numbers that
 
 **Mean** = average.
 
-**Median** = the "middle" observation. If this is very different from the mean, it indicates that outliers are skewing the data set.
+**Median** = the "middle" observation. If this is very different from the mean, it could potentially indicate the presence of outliers in the data set.
 
-**Std. Dev** = Standard Deviation. One standard deviation on either side of the mean encompasses 68% of the data set. Two deviations encompasses 95%. Three deviations captures 99% of the data set. 
+**Std. Dev** = Standard Deviation. One standard deviation on either side of the mean encompasses 68% of the data set. Two deviations encompasses 95%. Three deviations captures 99% of the data set. (Assuming the data is distributed normally).
+
+** Normal Distribution ** = data is divided evenly on either side of the mean. That is, there are roughly as many data points on the left side of the mean as on the right. This is rarely true and is the cause of many problematic analyses.
 
 **Skew** = describes the overall shape of the data on either side of the mean. A value of zero implies symmetrical distribution. A negative value indicates that the data tends to be distributed more heavily on the right side of the mean (possibly including the median). A positive value indicates that the data tends to be distributed more heavily on the left side of the mean (possibly including the median).
 
@@ -28,9 +30,9 @@ Or, said differently: high kurtosis means that more of the noise in the data is 
 
 **Notes on skew and kurtosis:**
 
-It's important to understand that skew and kurtosis are there to help you understand and interpret your data, they do not provide answers by themselves. *There is no substitute for good data and an even better understanding of that data!*
+It's important to understand that skew and kurtosis are there to help you understand and interpret your data, they do not provide answers by themselves. *There is no substitute for good data and a thorough knowledge of where that data came from.*
 
-If skew is negative, that just means that there's more data on the right side of the mean than the left. That's all it means though! It's up to the person running the program to understand whether or not this is desirable, and what story the data is telling you.
+If skew is negative, that just means that there's more data on the right side of the mean than the left. But that's all it means.  It's up to the person running the program to understand whether or not this is desirable, and what story the data is telling you.
 
 Similarly, a high kurtosis is not *"bad"* or *"good"*, it just depends on what you are trying to understand. It might be a good thing if kurtosis is high, because you are observing a scenario where, every once in a while, there's an extreme outlier, but you're okay adjusting for that.
 
