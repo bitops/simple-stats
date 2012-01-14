@@ -1,28 +1,34 @@
 #!/usr/bin/env ruby
+
 require 'statsample'
 
-file = ARGV[0]
-raw = File.read(file).split
-# if you had a header in the file
-#raw.shift
-raw.map!(&:to_i)
-v = raw.to_scale
+class Array
+  def ints
+   self.map!(&:to_i)
+  end
+end
 
-msg = <<STATS
+def read_data_points_from(f)
+  File.read(f).split
+end
+
+file = ARGV[0]
+raw = read_data_points_from file
+vector = raw.ints.to_scale
+
+puts <<STATS
 
 Statistics for #{file}
 ----------------------
 
-N:           #{v.n}
-Min:         #{v.min}
-Max:         #{v.max}
-Mean:        #{v.mean}
-Median:      #{v.median}
-Std. Dev:    #{v.sd}
+N:           #{vector.n}
+Min:         #{vector.min}
+Max:         #{vector.max}
+Mean:        #{vector.mean}
+Median:      #{vector.median}
+Std. Dev.    #{vector.sd}
 
-Skew:        #{v.skew}
-Kurtosis:    #{v.kurtosis}
+Skew:        #{vector.skew}
+Kurtosis:    #{vector.kurtosis}
 
 STATS
-
-puts msg
